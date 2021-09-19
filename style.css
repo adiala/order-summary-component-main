@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    background: url(images/pattern-background-desktop.svg), rgb(224, 232, 255);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(24,38,75);
+}
+
+p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.015em;
+}
+
+@media screen and (max-width: 375px){
+    body {
+        background: url(images/pattern-background-mobile.svg), rgb(224, 232, 255);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    .card-container {
+        width: 325px;
+    }
+
+    .card-content {
+        width: 282px;
+    }
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.background img {
+    width: 100vw;
+}
+
+.card-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    max-width: 450px;
+    min-height: 700px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 1px 15px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-content h1{
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+
+.description-box {
+    margin-bottom: 25px;
+}
+
+.description-box p {
+    max-width: 322px;
+    margin: auto;
+    color:rgb(130, 137, 158)
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-around;
+    max-width: 353px;
+    padding: 0 10px;
+    align-items: center;
+    margin:auto;
+    flex-grow: 0;
+    background-color: rgb(248,249,254);
+    height: 95px;
+    border-radius: 15px;
+}
+
+.price-box img {
+    width: 48px;
+    height: 48px;
+}
+
+.price-box a {
+    text-decoration: none;
+}
+
+.price-box a:hover {
+    color: rgb(118,108,241);
+}
+
+.price-tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-tag p {
+    color: rgb(69,80,112);
+    max-width: 92px;
+}
+
+.pay-button button {
+    border: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(56, 42, 225);
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: rgb(118,108,241);
+}
+
+.cancel-link {
+    margin-top: 30px;
+}
+
+.cancel-link a {
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(130, 137, 158)
+}
+
+a:hover {
+    color: rgb(35,47,73);
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
